@@ -6,3 +6,7 @@ filetype plugin indent on
 syntax enable
 
 let g:floaterm_gitcommit = 'split'
+
+if !has('nvim')
+  let g:floaterm_wintype = 'normal'
+endif
